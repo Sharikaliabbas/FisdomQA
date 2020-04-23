@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Mediclaim">
+              <span class="suite-name border-failed">Mediclaim</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Mediclaim">
+                    <span>D:\Fisdom\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Mediclaim">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Mediclaim">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Mediclaim">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Mediclaim">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Mediclaim">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Mediclaim">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 3 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Mediclaim" class="hide-methods failed suite-Mediclaim"> (hide)</a> <!-- hide-methods failed suite-Mediclaim -->
+                      <a href="#" panel-name="suite-Mediclaim" class="show-methods failed suite-Mediclaim"> (show)</a> <!-- show-methods failed suite-Mediclaim -->
+                    </span>
+                    <div class="method-list-content failed suite-Mediclaim">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBookingByEmptyData" hash-for-method="createBooking">createBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateTokenByInvalidCreds" hash-for-method="createTokenByInvalidCreds">createTokenByInvalidCreds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.IncorrectDataBooking" hash-for-method="incorrectDataBooking">incorrectDataBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Mediclaim -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Mediclaim" class="hide-methods passed suite-Mediclaim"> (hide)</a> <!-- hide-methods passed suite-Mediclaim -->
+                      <a href="#" panel-name="suite-Mediclaim" class="show-methods passed suite-Mediclaim"> (show)</a> <!-- show-methods passed suite-Mediclaim -->
+                    </span>
+                    <div class="method-list-content passed suite-Mediclaim">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBooking_Data" hash-for-method="createBooking({&quot;firstname&quot; : &quot;Eden&quot;,&quot;lastname&quot; : &quot;Hazard&quot;,&quot;totalprice&quot; : 7600,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; ...)">createBooking({"firstname" : "Eden","lastname" : "Hazard","totalprice" : 7600,"depositpaid" : true,"bookingdates" ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBooking" hash-for-method="createBooking">createBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBooking_Data" hash-for-method="createBooking({&quot;firstname&quot; : &quot;Cristiano&quot;,&quot;lastname&quot; : &quot;Ronaldo&quot;,&quot;totalprice&quot; : 19723,&quot;depositpaid&quot; : true,&quot;booking...)">createBooking({"firstname" : "Cristiano","lastname" : "Ronaldo","totalprice" : 19723,"depositpaid" : true,"booking...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBooking_Data" hash-for-method="createBooking({&quot;firstname&quot; : &quot;Vinicius&quot;,&quot;lastname&quot; : &quot;Junior&quot;,&quot;totalprice&quot; : 10000,&quot;depositpaid&quot; : true,&quot;bookingda...)">createBooking({"firstname" : "Vinicius","lastname" : "Junior","totalprice" : 10000,"depositpaid" : true,"bookingda...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBooking_Data" hash-for-method="createBooking({&quot;firstname&quot; : &quot;Sharik&quot;,&quot;lastname&quot; : &quot;Abbas&quot;,&quot;totalprice&quot; : 9723,&quot;depositpaid&quot; : true,&quot;bookingdates&quot;...)">createBooking({"firstname" : "Sharik","lastname" : "Abbas","totalprice" : 9723,"depositpaid" : true,"bookingdates"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.CreateBooking_Data" hash-for-method="createBooking({&quot;firstname&quot; : &quot;Karim&quot;,&quot;lastname&quot; : &quot;Benzema&quot;,&quot;totalprice&quot; : 10100,&quot;depositpaid&quot; : true,&quot;bookingdate...)">createBooking({"firstname" : "Karim","lastname" : "Benzema","totalprice" : 10100,"depositpaid" : true,"bookingdate...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.SearchBookingById" hash-for-method="getBookingById">getBookingById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.SearchBookingByName" hash-for-method="getBookingByName">getBookingByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.PartialUpdateBooking" hash-for-method="partialUpdateBooking">partialUpdateBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.UpdateBooking" hash-for-method="updateBooking">updateBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Mediclaim" title="fisdomQA.UpdateBookingByIncorrectToken" hash-for-method="updateBookingByIncorrectToken">updateBookingByIncorrectToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Mediclaim -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Mediclaim" class="panel Mediclaim">
+          <div class="suite-Mediclaim-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">fisdomQA.CreateTokenByInvalidCreds</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createTokenByInvalidCreds">
+                  </a> <!-- createTokenByInvalidCreds -->
+                  <span class="method-name">createTokenByInvalidCreds</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;401&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at fisdomQA.CreateTokenByInvalidCreds.createTokenByInvalidCreds(CreateTokenByInvalidCreds.java:27)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-failed -->
+          <div class="suite-Mediclaim-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">fisdomQA.CreateBookingByEmptyData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking">
+                  </a> <!-- createBooking -->
+                  <span class="method-name">createBooking</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at fisdomQA.CreateBookingByEmptyData.createBooking(CreateBookingByEmptyData.java:29)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-failed -->
+          <div class="suite-Mediclaim-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">fisdomQA.IncorrectDataBooking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="incorrectDataBooking">
+                  </a> <!-- incorrectDataBooking -->
+                  <span class="method-name">incorrectDataBooking</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at fisdomQA.IncorrectDataBooking.incorrectDataBooking(IncorrectDataBooking.java:29)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-failed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.CreateBooking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking">
+                  </a> <!-- createBooking -->
+                  <span class="method-name">createBooking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.UpdateBookingByIncorrectToken</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBookingByIncorrectToken">
+                  </a> <!-- updateBookingByIncorrectToken -->
+                  <span class="method-name">updateBookingByIncorrectToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.SearchBookingByName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookingByName">
+                  </a> <!-- getBookingByName -->
+                  <span class="method-name">getBookingByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.CreateBooking_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking({&quot;firstname&quot; : &quot;Eden&quot;,&quot;lastname&quot; : &quot;Hazard&quot;,&quot;totalprice&quot; : 7600,&quot;depositpaid&quot; : true,&quot;bookingdates&quot; ...)">
+                  </a> <!-- createBooking({"firstname" : "Eden","lastname" : "Hazard","totalprice" : 7600,"depositpaid" : true,"bookingdates" ...) -->
+                  <span class="method-name">createBooking</span>
+                  <span class="parameters">({"firstname" : "Eden","lastname" : "Hazard","totalprice" : 7600,"depositpaid" : true,"bookingdates" : {"checkin" : "2020-11-21","checkout" : "2020-11-30"},"additionalneeds" : "Tea"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking({&quot;firstname&quot; : &quot;Cristiano&quot;,&quot;lastname&quot; : &quot;Ronaldo&quot;,&quot;totalprice&quot; : 19723,&quot;depositpaid&quot; : true,&quot;booking...)">
+                  </a> <!-- createBooking({"firstname" : "Cristiano","lastname" : "Ronaldo","totalprice" : 19723,"depositpaid" : true,"booking...) -->
+                  <span class="method-name">createBooking</span>
+                  <span class="parameters">({"firstname" : "Cristiano","lastname" : "Ronaldo","totalprice" : 19723,"depositpaid" : true,"bookingdates" : {"checkin" : "2020-09-21","checkout" : "2020-09-26"},"additionalneeds" : "Lunch"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking({&quot;firstname&quot; : &quot;Vinicius&quot;,&quot;lastname&quot; : &quot;Junior&quot;,&quot;totalprice&quot; : 10000,&quot;depositpaid&quot; : true,&quot;bookingda...)">
+                  </a> <!-- createBooking({"firstname" : "Vinicius","lastname" : "Junior","totalprice" : 10000,"depositpaid" : true,"bookingda...) -->
+                  <span class="method-name">createBooking</span>
+                  <span class="parameters">({"firstname" : "Vinicius","lastname" : "Junior","totalprice" : 10000,"depositpaid" : true,"bookingdates" : {"checkin" : "2020-05-11","checkout" : "2020-06-06"},"additionalneeds" : "ExtraBaggage"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking({&quot;firstname&quot; : &quot;Sharik&quot;,&quot;lastname&quot; : &quot;Abbas&quot;,&quot;totalprice&quot; : 9723,&quot;depositpaid&quot; : true,&quot;bookingdates&quot;...)">
+                  </a> <!-- createBooking({"firstname" : "Sharik","lastname" : "Abbas","totalprice" : 9723,"depositpaid" : true,"bookingdates"...) -->
+                  <span class="method-name">createBooking</span>
+                  <span class="parameters">({"firstname" : "Sharik","lastname" : "Abbas","totalprice" : 9723,"depositpaid" : true,"bookingdates" : {"checkin" : "2020-05-21","checkout" : "2020-06-06"},"additionalneeds" : "Breakfast"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking({&quot;firstname&quot; : &quot;Karim&quot;,&quot;lastname&quot; : &quot;Benzema&quot;,&quot;totalprice&quot; : 10100,&quot;depositpaid&quot; : true,&quot;bookingdate...)">
+                  </a> <!-- createBooking({"firstname" : "Karim","lastname" : "Benzema","totalprice" : 10100,"depositpaid" : true,"bookingdate...) -->
+                  <span class="method-name">createBooking</span>
+                  <span class="parameters">({"firstname" : "Karim","lastname" : "Benzema","totalprice" : 10100,"depositpaid" : true,"bookingdates" : {"checkin" : "2020-06-21","checkout" : "2020-07-06"},"additionalneeds" : "NeckPillow"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.UpdateBooking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBooking">
+                  </a> <!-- updateBooking -->
+                  <span class="method-name">updateBooking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.SearchBookingById</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookingById">
+                  </a> <!-- getBookingById -->
+                  <span class="method-name">getBookingById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+          <div class="suite-Mediclaim-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fisdomQA.PartialUpdateBooking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="partialUpdateBooking">
+                  </a> <!-- partialUpdateBooking -->
+                  <span class="method-name">partialUpdateBooking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Mediclaim-class-passed -->
+        </div> <!-- panel Mediclaim -->
+        <div panel-name="test-xml-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Fisdom\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Mediclaim&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;fisdomQA.CreateBooking&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.CreateBooking_Data&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.SearchBookingById&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.SearchBookingByName&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.CreateBookingByEmptyData&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.CreateTokenByInvalidCreds&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.IncorrectDataBooking&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.PartialUpdateBooking&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.UpdateBooking&quot;/&gt;
+      &lt;class name=&quot;fisdomQA.UpdateBookingByIncorrectToken&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Mediclaim --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Mediclaim</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Mediclaim</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Mediclaim</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Mediclaim');
+function tableData_Mediclaim() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'updateBooking')
+data.setCell(0, 2, 'fisdomQA.UpdateBooking')
+data.setCell(0, 3, 3761);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'partialUpdateBooking')
+data.setCell(1, 2, 'fisdomQA.PartialUpdateBooking')
+data.setCell(1, 3, 3653);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateBookingByIncorrectToken')
+data.setCell(2, 2, 'fisdomQA.UpdateBookingByIncorrectToken')
+data.setCell(2, 3, 3597);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getBookingById')
+data.setCell(3, 2, 'fisdomQA.SearchBookingById')
+data.setCell(3, 3, 2946);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createBooking')
+data.setCell(4, 2, 'fisdomQA.CreateBooking')
+data.setCell(4, 3, 2932);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getBookingByName')
+data.setCell(5, 2, 'fisdomQA.SearchBookingByName')
+data.setCell(5, 3, 2454);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createBooking')
+data.setCell(6, 2, 'fisdomQA.CreateBooking_Data')
+data.setCell(6, 3, 1311);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createBooking')
+data.setCell(7, 2, 'fisdomQA.CreateBookingByEmptyData')
+data.setCell(7, 3, 1259);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'incorrectDataBooking')
+data.setCell(8, 2, 'fisdomQA.IncorrectDataBooking')
+data.setCell(8, 3, 1255);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createTokenByInvalidCreds')
+data.setCell(9, 2, 'fisdomQA.CreateTokenByInvalidCreds')
+data.setCell(9, 3, 1252);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'createBooking')
+data.setCell(10, 2, 'fisdomQA.CreateBooking_Data')
+data.setCell(10, 3, 1239);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createBooking')
+data.setCell(11, 2, 'fisdomQA.CreateBooking_Data')
+data.setCell(11, 3, 1232);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createBooking')
+data.setCell(12, 2, 'fisdomQA.CreateBooking_Data')
+data.setCell(12, 3, 1225);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createBooking')
+data.setCell(13, 2, 'fisdomQA.CreateBooking_Data')
+data.setCell(13, 3, 1207);
+window.suiteTableData['Mediclaim']= { tableData: data, tableDiv: 'times-div-Mediclaim'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <div id="times-div-Mediclaim">
+              </div> <!-- times-div-Mediclaim -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Mediclaim</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Mediclaim" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.CreateBooking</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createBooking</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.CreateBooking_Data</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createBooking({"firstname" : "Sharik","lastname" : "Abbas","totalprice" : 9723,"depositpaid" : true,"bookingdates"...)</span>
+                <span class="method-start">3449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBooking({"firstname" : "Cristiano","lastname" : "Ronaldo","totalprice" : 19723,"depositpaid" : true,"booking...)</span>
+                <span class="method-start">4674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBooking({"firstname" : "Eden","lastname" : "Hazard","totalprice" : 7600,"depositpaid" : true,"bookingdates" ...)</span>
+                <span class="method-start">5913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBooking({"firstname" : "Karim","lastname" : "Benzema","totalprice" : 10100,"depositpaid" : true,"bookingdate...)</span>
+                <span class="method-start">7120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createBooking({"firstname" : "Vinicius","lastname" : "Junior","totalprice" : 10000,"depositpaid" : true,"bookingda...)</span>
+                <span class="method-start">8352 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.SearchBookingById</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getBookingById</span>
+                <span class="method-start">9667 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.SearchBookingByName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getBookingByName</span>
+                <span class="method-start">12616 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.CreateBookingByEmptyData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createBooking</span>
+                <span class="method-start">15070 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.CreateTokenByInvalidCreds</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createTokenByInvalidCreds</span>
+                <span class="method-start">16329 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.IncorrectDataBooking</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">incorrectDataBooking</span>
+                <span class="method-start">17581 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.PartialUpdateBooking</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">partialUpdateBooking</span>
+                <span class="method-start">18839 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.UpdateBooking</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updateBooking</span>
+                <span class="method-start">22492 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">fisdomQA.UpdateBookingByIncorrectToken</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updateBookingByIncorrectToken</span>
+                <span class="method-start">26257 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

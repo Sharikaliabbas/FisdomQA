@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Add test suites for all insights back-office clients -->
+
+
+
+<suite name="Mediclaim" thread-count="3">
+
+<listeners>
+<listener class-name="utils.Listeners"/>
+</listeners>
+
+	<test name="Test">
+	    <classes>
+	        <class name="fisdomQA.CreateBooking"/>
+	        <class name="fisdomQA.CreateBooking_Data"/>
+	        <class name="fisdomQA.SearchBookingById"/>
+	        <class name="fisdomQA.SearchBookingByName"/>
+	        <class name="fisdomQA.CreateBookingByEmptyData"/>
+	        <class name="fisdomQA.CreateTokenByInvalidCreds"/>
+	        <class name="fisdomQA.IncorrectDataBooking"/>
+	        <class name="fisdomQA.PartialUpdateBooking"/>
+	        <class name="fisdomQA.UpdateBooking"/>
+	        <class name="fisdomQA.UpdateBookingByIncorrectToken"/>
+	    </classes>
+	</test>
+
+</suite>
